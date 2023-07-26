@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="24sp"
+    app:cardElevation="24dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/text_levelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:text="Pro"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_statusState"
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_process"
+            app:layout_constraintBottom_toBottomOf="@+id/image_circle"
+            app:layout_constraintStart_toStartOf="@id/text_levelName"
+            app:layout_constraintTop_toBottomOf="@id/text_levelName" />
+
+
+        <TextView
+            android:id="@+id/text_counterCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/image_circle"
+            app:layout_constraintEnd_toEndOf="@id/image_circle"
+            app:layout_constraintStart_toStartOf="@id/image_circle"
+            app:layout_constraintTop_toTopOf="@id/image_circle" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="@id/text_counterCompleted"
+            app:layout_constraintStart_toEndOf="@id/text_counterCompleted"
+            app:layout_constraintTop_toTopOf="@id/text_counterCompleted" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

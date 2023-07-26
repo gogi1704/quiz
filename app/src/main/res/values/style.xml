@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.MyApp.CardView.TopCorners" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+
+    </style>
+
+
+</resources>
